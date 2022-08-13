@@ -66,6 +66,10 @@ a{
     
 }
 
+a:hover{
+    color: blueviolet;
+}
+
 li:hover {
     color: blueviolet;
     transform: scale(1.1);
