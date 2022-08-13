@@ -1,0 +1,651 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Open+Sans:wght@300&family=Roboto:wght@100;300&display=swap');
+
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*Header*/
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 0.2rem solid rgb(101, 89, 104);
+    background-color: rgb(160, 160, 178);
+}
+
+h1{
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    padding-top: 1rem;
+}
+
+.logo{
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    color: blueviolet;
+}
+
+nav{
+    text-align: center;
+    padding: 1rem
+}
+
+ul{
+    list-style-type: none;
+    word-spacing: 1rem;
+    
+}
+
+li{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:hover {
+    color:rgb(149, 229, 243);
+    background-color:silver;
+
+}
+
+/*inicio*/
+
+.gridInicio{
+    height: 100%;
+    display: grid;
+    text-align: center;
+    align-items: start;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "principal"
+    "secundaria";
+    gap: 2rem;
+    
+}
+
+.seccionPrincipal{
+    width: 100%;
+    grid-area: principal;
+    background-color: rgb(164,165,183);
+}
+.seccionSecundaria{
+    display: flex;
+    flex-direction: column;
+    grid-area: secundaria;
+    width: 100%;
+    background-color: rgb(216,186,183);
+    padding-bottom: 1rem;
+    
+}
+
+.promociones{
+   background-color: white;
+   margin: 1rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   text-align: center;
+   border-radius: 1.5rem;
+   box-shadow: 1rem silver;
+   box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+}
+
+.noticiaPrincipal{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: rgb(164,165,183);
+    text-align: center;
+    padding: 1.5rem;
+    
+}
+
+.noticiaSecundaria{
+    width: 100%;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: rgb(216,186,183);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.parrafoInicio{
+   color: black;
+   font-weight: bold;
+   font-size: 1rem;
+   font-family: 'open Sans', sans-serif;
+   text-align: center;
+   padding: 1rem;
+   margin: 1rem;
+   border: 0.1rem solid black; 
+   background-color: white;
+}
+
+.imagenRecomendacion{
+    width: 100%;
+    text-align: center;
+}
+
+.imagenPromo{
+    width: 100%;
+    border: 0.3rem solid rgb(186, 187, 197);
+    margin-top: 2.5rem;
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+    background-color: rgb(145,136,157);
+    text-align: center;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h4{
+    font-size: 2rem;
+    font-family: 'open Sans', sans-serif;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.atencion{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'open Sans', sans-serif;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.mapa{
+    width: 100%;
+}
+
+@media(min-width:500px){ 
+    .noticiaPrincipal{
+        font-size: 2.5rem;       
+    }
+    
+    .noticiaSecundaria{
+        font-size: 2.5rem;
+    }
+}
+
+@media(min-width: 768px){
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 0rem 2rem;
+    }  
+    
+    .seccionSecundaria{
+        display: flex;
+        flex-direction: row;       
+    }
+    
+    .noticiaSecundaria{
+        font-size: 1.6rem;
+        padding: 1.5rem;
+    }  
+
+    footer{
+        padding: 2rem 0rem;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+}
+
+@media(min-width:1024px){
+    h1{
+        font-size: 4rem;
+        padding-right: 3rem;
+    }
+    
+    .logo{
+        font-size: 4rem;
+    }
+    
+    li{
+        font-size: 2rem;
+    }
+
+    .noticiaPrincipal{
+        font-size: 3rem;
+    }
+
+    .noticiaSecundaria{
+        font-size: 2.5rem;
+    }
+
+    .parrafoInicio{
+        font-size: 1.5rem;
+    }
+
+
+}
+
+/*servicios*/
+
+.noticiaServicios{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(156, 153, 161);
+}
+
+.peluqueria{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(223, 223, 241);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.maquillaje{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(223, 223, 241);
+    padding-bottom: 3rem;
+}
+
+
+.tituloPeluqueria{
+    font-size: 3rem;
+    color: white;
+    padding: 1rem 0rem;
+    grid-area: tituloPeluqueria;
+}
+
+.imagenPeluqueria{
+    width: 100%;
+    grid-area: imagenPeluqueria;
+}
+
+.listaPeluqueria{
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: list-item;
+    text-align: center;
+    word-spacing: 0.2rem;
+    grid-area: listaPeluqueria;
+}
+
+.imagenCarrito{
+    grid-area: imagenCarrito;
+}
+
+.tituloMaquillaje{
+    color: white;
+    padding: 1rem 0rem;
+    grid-area: tituloMaquillaje;
+
+}
+
+.imagenMaquillaje{
+    width: 100%;
+    grid-area: imagenMaquillaje;
+}
+
+.listaMaquillaje{
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: list-item;
+    text-align: center;
+    word-spacing: 0.2rem;
+    grid-area: listaMaquillaje;
+}
+
+@media(min-width:500px){
+    .listaPeluqueria{
+        display: inline-block;
+    }
+    .listaMaquillaje{
+        display: inline-block;
+    }
+}
+
+@media(min-width:768px){
+    .peluqueria{
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-areas: 
+        "tituloPeluqueria  tituloPeluqueria"
+        "imagenPeluqueria  listaPeluqueria"
+        "imagenPeluqueria imagenCarrito";
+    }
+    
+    .maquillaje{
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-areas: 
+        "tituloMaquillaje  tituloMaquillaje"
+        "imagenMaquillaje  listaMaquillaje"
+        "imagenMaquillaje imagenCarrito";
+    }
+
+    .listaPeluqueria{
+        font-size: 2rem;
+        display: list-item;
+        text-align: left;
+        padding-left: 4rem;
+        padding-right: 10rem;
+    }
+
+    .listaMaquillaje{
+        font-size: 2rem;
+        display: list-item;
+        text-align: left;
+        padding: 0rem 4rem;
+    }
+
+}
+
+@media(min-width:1024px){
+
+    .tituloPeluqueria{
+        font-size: 3.6rem;
+    }
+
+    .tituloMaquillaje{
+        font-size: 3.6rem;
+    }
+    
+    .listaPeluqueria{
+        font-size: 3rem;
+    }
+
+    .listaMaquillaje{
+        font-size: 3rem;
+    }
+}
+
+/*productos*/
+
+.productos{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.primontZid{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: primontZid;
+}
+
+.shampooSilver{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: shampooSilver;
+}
+
+.shockDeKeratina{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: shockDeKeratina;
+}
+
+.oxidante{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: oxidante;
+}
+
+.tintura{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: tintura;
+}
+
+.colorPlex{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: colorPlex;
+}
+
+.polvoDecolorante{
+    background-color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1.5rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: polvoDecolorante;
+}
+
+.imagenProductos{
+    width: 100%;
+    align-items: center;
+
+}
+
+.parrafoProductos{
+    width: 100%;
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 0rem;
+}
+
+@media(min-width:500px){
+    .parrafoProductos{
+        font-size: 1.8rem;
+    }
+
+    .productos{
+        width: 100%;
+        display: grid;
+       
+        grid-template-areas:
+        "primontZid  shampooSilver"
+        "shockDeKeratina  oxidante"
+        "tintura  colorPlex"
+        "polvoDecolorante ...";
+    }
+
+}
+
+@media(min-width:768px){
+    .productos{
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-areas:
+        "primontZid  shampooSilver  shockDeKeratina"
+        "oxidante  tintura  colorPlex"
+        "polvoDecolorante .... ----";
+    }
+
+    .parrafoProductos{
+        font-size: 1.3rem;
+    }
+}
+
+@media(min-width:1024px){
+    .productos{
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-areas:
+        "primontZid  shampooSilver  shockDeKeratina  oxidante"
+        "tintura  colorPlex  polvoDecolorante ....";
+    }
+}
+
+/*nosotros*/
+
+.nosotros{
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    align-items: center;
+}
+
+.nuestroVideo{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.galeria{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.imagenGaleria1{
+    width: 100%;
+    margin: 0.5rem;
+    border: 0.2rem solid rgb(119, 118, 121);
+    border-radius: 2rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: imagen1;
+}
+.imagenGaleria2{
+    width: 100%;
+    margin: 0.5rem;
+    border: 0.2rem solid rgb(119, 118, 121);
+    border-radius: 2rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: imagen2;
+}
+.imagenGaleria3{
+    width: 100%;
+    margin: 0.5rem;
+    border: 0.2rem solid rgb(119, 118, 121);
+    border-radius: 2rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: imagen3;
+}
+.imagenGaleria4{
+    width: 100%;
+    margin: 0.5rem;
+    border: 0.2rem solid rgb(119, 118, 121);
+    border-radius: 2rem;
+    box-shadow: 1rem silver;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
+    grid-area: imagen4;
+}
+
+@media(min-width:500px){
+    .nosotros{
+        font-size: 1.6rem;
+    }
+    .galeria{
+        font-size: 2rem;
+    }
+}
+
+@media(min-width:768px){
+    .tituloGaleria{
+        padding: 2rem 0rem;
+    }
+    .galeria{
+        width: 100%;
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-areas:
+        " imagen1  imagen2"
+        " imagen3  imagen4";
+    }
+}
+
+@media(min-width:1024px){
+    .parrafoNosotros{
+        font-size: 2rem;
+    }
+}
+
+/*contacto*/
+
+.contactoFondo{
+    background-color: rgb(229, 229, 233) ;
+}
+.contacto{
+    margin-top: 5rem ;
+    margin-bottom: 10rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(229, 229, 233) ;
+}
+
+@media(min-width:768px){
+    .contacto{
+        font-size: 2rem;
+    }
+}
