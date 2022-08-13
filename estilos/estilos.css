@@ -66,9 +66,9 @@ a{
     
 }
 
-a:hover {
-    color:rgb(149, 229, 243);
-    background-color:silver;
+li:hover {
+    color: blueviolet;
+    transform: scale(1.1);
 
 }
 
@@ -114,6 +114,11 @@ a:hover {
    box-shadow: 0.3rem 0.3rem 0.6rem rgba(0,0,0,0.5);
 }
 
+.promociones:hover{
+    transform: scale(1.03);
+}
+
+
 .noticiaPrincipal{
     font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
@@ -121,6 +126,7 @@ a:hover {
     background-color: rgb(164,165,183);
     text-align: center;
     padding: 1.5rem;
+    
     
 }
 
@@ -401,6 +407,7 @@ h4{
     display: flex;
     flex-direction: column;
 }
+
 .primontZid{
     background-color: white;
     margin: 1rem;
