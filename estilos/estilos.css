@@ -22,28 +22,40 @@ body{
 header{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     border-bottom: 0.2rem solid rgb(101, 89, 104);
     background-color: rgb(160, 160, 178);
 }
 
-h1{
+.logoPrincipal{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.logoVentas{
     font-size: 3rem;
     font-family: 'Lato', sans-serif;
     color: white;
     padding-top: 1rem;
+    
 }
 
 .logo{
     font-size: 3rem;
+    font-weight: bold;
     font-family: 'Lato', sans-serif;
     color: blueviolet;
+    
 }
 
 nav{
     text-align: center;
-    padding: 1rem
+    padding: 1rem;
+    
 }
 
 ul{
@@ -54,7 +66,7 @@ ul{
 
 li{
     display: inline-block;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     
@@ -62,18 +74,11 @@ li{
 
 a{
     text-decoration: none;
-    color: white;
-    
-}
-
-a:hover{
-    color: blueviolet;
+    color: white; 
 }
 
 li:hover {
-    color: blueviolet;
     transform: scale(1.1);
-
 }
 
 /*inicio*/
@@ -89,14 +94,8 @@ li:hover {
     "principal"
     "secundaria";
     gap: 2rem;
-    
 }
 
-.seccionPrincipal{
-    width: 100%;
-    grid-area: principal;
-    background-color: rgb(164,165,183);
-}
 .seccionSecundaria{
     display: flex;
     flex-direction: column;
@@ -201,6 +200,12 @@ h4{
 }
 
 @media(min-width:500px){ 
+
+    .logoPrincipal{
+        flex-direction: row;
+        align-items: baseline;
+    }
+
     .noticiaPrincipal{
         font-size: 2.5rem;       
     }
@@ -213,8 +218,8 @@ h4{
 @media(min-width: 768px){
     header{
         display: flex;
-        flex-direction: row;
-        align-items: baseline;
+        flex-direction: row-reverse;
+        align-items: center;
         padding: 0rem 2rem;
     }  
     
@@ -236,14 +241,18 @@ h4{
     
 }
 
-@media(min-width:1024px){
-    h1{
+@media(min-width:990px){
+    header{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .logoVentas{
         font-size: 4rem;
-        padding-right: 3rem;
     }
     
     .logo{
         font-size: 4rem;
+        padding-right: 3rem;
     }
     
     li{
@@ -640,23 +649,16 @@ h4{
 }
 
 /*contacto*/
-
-.contactoFondo{
-    background-color: rgb(229, 229, 233) ;
-}
-.contacto{
-    margin-top: 5rem ;
-    margin-bottom: 10rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5rem;
+.mainContacto{
+    padding:6rem;
+    background-color: rgb(196, 196, 204);
     font-weight: bold;
-    background-color: rgb(229, 229, 233) ;
 }
-
-@media(min-width:768px){
-    .contacto{
-        font-size: 2rem;
-    }
+.tituloContacto{
+    font-size: 2.2rem;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+.form-label{
+    font-size: 1.3rem;
 }
